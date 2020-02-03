@@ -33,6 +33,7 @@
 }
 
 .main {
+	display: block;
 	width: 100%;
 	height: 2000px;
 	background-color: blue;
@@ -41,6 +42,13 @@
 
 .main h2 {
 	font-style: italic;
+}
+
+.main p {
+	display: inline-block;
+	width: 350px;
+	text-align: center;
+	padding-bottom: 20px;
 }
 
 #about {
