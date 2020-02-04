@@ -5,15 +5,6 @@
 }
 
 @font-face {
-  font-family: 'Kelly Slab';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Kelly Slab'), local('KellySlab-Regular'), url(https://fonts.gstatic.com/s/kellyslab/v10/-W_7XJX0Rz3cxUnJC5t6fkQLfr8nfiI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
   font-family: 'Nunito';
   font-style: italic;
   font-weight: 400;
@@ -81,7 +72,7 @@
 	font-family: "Overpass", sans-serif;
 	font-weight: 700;
 	font-size: 38px;
-	
+	cursor: default;
 }
 
 .nav {
@@ -101,6 +92,10 @@
 a {
 	width: inherit;
 	height: inherit;
+}
+
+a .nav-btn:hover {
+	color: #c41e3a; /* Cardinal Red */
 }
 
 .nav-btn {
@@ -130,17 +125,20 @@ a {
 	height: 2000px;
 	background-color: white;
 	border: thick solid black;
+	cursor: default;
 }
 
 .main h2 {
 	font-family: "Overpass", sans-serif;
 	font-style: italic;
-	font-size: 30px;
+	font-size: 32px;
 }
 
 .main h3 {
 	margin: 10px auto;
 	max-width: 800px;
+	font-family: "Nunito", sans-serif;
+	font-style: italic;
 }
 
 .main p {
@@ -148,6 +146,7 @@ a {
 	padding-bottom: 20px;
 	max-width: 600px;
 	text-align: left;
+	font-family: "Nunito", sans-serif;
 }
 
 .year-grid {
