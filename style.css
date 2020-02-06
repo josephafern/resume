@@ -62,7 +62,7 @@
 	display: grid;
 	width: 100%;
 	height: 100px;
-	background-color: white;
+	text-align: center;
 	justify-items: center;
 	align-items: center;
 	border: thick solid black;
@@ -128,10 +128,12 @@ a .nav-btn:hover {
 	cursor: default;
 }
 
-.main h2 {
+h2 {
 	font-family: "Overpass", sans-serif;
 	font-style: italic;
 	font-size: 32px;
+	color: white;
+	
 }
 
 .main h3 {
@@ -144,25 +146,63 @@ a .nav-btn:hover {
 .main p {
 	margin: 20px auto;
 	padding-bottom: 20px;
+	padding-left: 25px;
 	max-width: 600px;
 	text-align: left;
 	font-family: "Nunito", sans-serif;
 }
 
-.year-grid {
-
+.year-row {
+	display: grid;
+	max-width: 650px;
+	grid-template: 1fr 1fr / 1.1fr 1.9fr;
+	margin: 20px auto;
+	font-family: "Nunito", sans-serif;
 }
 
-#education, #rel-exp, #other-exp {
-	padding-top: 60px;
+.year-row .left {
+	min-height: 50px;
+	text-align: right;
+	padding-right: 30px;
+	padding-left: 35px;
+}
+
+.year-row .right {
+	text-align: left;
+	padding-right: 10px;
+}
+
+.right span {
+	font-size: 25px;
+}
+
+h2 span {
+	background-color: #c41e3a;
+	padding-right: 30px;
 	padding-left: 15px;
+}
+
+.h2-back {
+	display: inline-block;
+	width: 0;
+    height: 0;
+    border-top: 40px solid red;
+    border-right: 40px solid transparent;
+}
+
+#objective, #education, #other-exp, #rel-exp {
+	padding-top: 60px;
+	
+}
+
+#rel-exp h3 {
+	padding-left: 25px;
+	padding-top: 20px;
 }
 
 #objective {
 	display: grid;
 	grid-template: 100% / 3fr 1fr;
-	padding-top: 60px;
-	padding-left: 15px;
 }
 
 #objective p {
