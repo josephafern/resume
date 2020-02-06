@@ -61,17 +61,16 @@
 .header {
 	display: grid;
 	width: 100%;
-	height: 100px;
+	height: 16vw;
 	text-align: center;
 	justify-items: center;
 	align-items: center;
-	border: thick solid black;
 }
 
 .header h1 {
 	font-family: "Overpass", sans-serif;
 	font-weight: 700;
-	font-size: 38px;
+	font-size: 6vw;
 	cursor: default;
 }
 
@@ -79,20 +78,23 @@
 	display: grid;
 	position: sticky;
 	width: 100%;
-	height: 50px;
+	height: 7vw;
 	grid-template: 100% / repeat(4, 1fr);
 	top: 0;
 	justify-items: center;
 	align-items: center;
-	grid-column-gap: 6px;
-	border: thick solid black;
+	grid-column-gap: 0.5vw;
+	border: 1vw solid black;
+	border-left: none;
+	border-right: none;
 	background-color: white;
-	z-index: 2;
+	padding 0 1vw;
 }
 
 a {
 	width: inherit;
 	height: inherit;
+	text-decoration: inherit;
 }
 
 a .nav-btn:hover {
@@ -101,111 +103,105 @@ a .nav-btn:hover {
 
 .nav-btn {
 	font-family: "Overpass", sans-serif;
-	font-size: 19px;
+	font-size: 2.7vw;
 	background-color: black;
 	color: white;
 	text-align: center;
-	
-	
+	height: 100%;
 }
 
-.nav-btn p {
-	display: inline-block;
-	line-height: 18px;
-	width: 6em;
+.nav-btn span {
+	font-size: 1.7vw;
 }
 
 /* nav button single word */
-.nb-single {
-	padding: 14px 0;
+.single-word {
+	padding-top: 1.3vw;
+}
+
+.double-word {
+	line-height: 2.6vw;
+	padding-top: 0.3vw;
 }
 
 .main {
 	display: block;
 	width: 100%;
-	height: 2000px;
 	background-color: white;
-	border: thick solid black;
 	cursor: default;
 }
 
 h2 {
 	font-family: "Overpass", sans-serif;
 	font-style: italic;
-	font-size: 32px;
+	font-size: 5vw;
 	color: white;
 	
 }
 
 .main h3 {
 	margin: 10px auto;
-	max-width: 800px;
 	font-family: "Nunito", sans-serif;
 	font-style: italic;
+	font-size: 3.3vw;
 }
 
 .main p {
-	margin: 20px auto;
-	padding-bottom: 20px;
-	padding-left: 25px;
-	max-width: 600px;
+	margin: 0 12vw;
+	padding-bottom: 4vw;
+	padding-left: 2vw;
 	text-align: left;
 	font-family: "Nunito", sans-serif;
+	font-size: 3vw;
 }
 
 .year-row {
 	display: grid;
 	max-width: 650px;
-	grid-template: 1fr 1fr / 1.1fr 1.9fr;
-	margin: 20px auto;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	margin: 3vw 6vw;
 	font-family: "Nunito", sans-serif;
 }
 
 .year-row .left {
-	min-height: 50px;
 	text-align: right;
 	padding-right: 30px;
 	padding-left: 35px;
+	font-size: 3vw;
 }
 
 .year-row .right {
 	text-align: left;
 	padding-right: 10px;
+	font-size: 2.5vw;
 }
 
 .right span {
-	font-size: 25px;
+	font-size: 4vw;
 }
 
 h2 span {
 	background-color: #c41e3a;
-	padding-right: 20px;
+	padding-right: 10px;
 	padding-left: 15px;
-}
-
-.h2-back {
-	display: inline-block;
-	position: relative;
-    border-top: 40px solid #c41e3a;
-    border-right: 40px solid transparent;
-    top: 9px;
-    z-index: 1;
 }
 
 
 #objective, #education, #other-exp, #rel-exp {
-	padding-top: 60px;
+	padding-top: 9vw;
 	
 }
 
 #rel-exp h3 {
-	padding-left: 25px;
-	padding-top: 20px;
+	padding-left: 6vw;
+	padding-top: 6vw;
 }
 
-#objective {
+#objective-grid {
 	display: grid;
 	grid-template: 100% / 3fr 1fr;
+	align-items: center;
+	padding-top: 3vw;
 }
 
 #objective p {
@@ -215,6 +211,9 @@ h2 span {
 
 #objective img {
 	float: right;
-	width: 150px;
-	height: 150px;
+	width: 30vw;
+	height: 30vw;
+	min-width: 100px;
+	min-height: 100px;
+	margin-right: 3vw;
 }
